@@ -1,0 +1,33 @@
+[project]
+name = "juliustools"
+description = "An API wrapper for the Julius Tools API"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+keywords = ["julius", "tools", "api", "wrapper"]
+authors = [
+  { name="julianwe17"}
+]
+readme = "README.md"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dynamic = ["dependencies", "version"]
+
+[tool.setuptools.dynamic]
+version = {attr = "juliustools.__version__"}
+dependencies = {file = "requirements.txt"}
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[project.urls]
+GitHub = "https://github.com/Julianwe17/juliustools"
+Julius = "https://juliusbot.eu/"
